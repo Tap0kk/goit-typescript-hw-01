@@ -1,7 +1,7 @@
 interface Page {
   title: string;
   likes: number;
-  accounts: [...string[]];
+  accounts: string[];
   status: "open" | "close";
   details?: {
     createAt: Date;
@@ -26,7 +26,3 @@ const page2: Page = {
   accounts: ["Alex"],
   status: "close",
 };
-
-console.log("============ Task 7 =============");
-console.log(page1);
-console.log(page2);

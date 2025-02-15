@@ -1,3 +1,4 @@
+// Omit
 type Errors = {
   email?: string[];
   firstName?: string[];
@@ -13,6 +14,5 @@ type Form = {
   errors: Errors;
 };
 
-// Реалізуйте Params так,
-// щоб унеможливити поле 'errors' з типу Form
+// Omit -  унеможливити поле 'errors' з типу Form
 type Params = Omit<Form, "errors">;

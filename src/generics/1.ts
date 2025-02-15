@@ -1,3 +1,4 @@
+//Generics для типізації повернутих даних.
 import axios from "axios";
 
 async function fetchData<T>(url: string): Promise<T> {
